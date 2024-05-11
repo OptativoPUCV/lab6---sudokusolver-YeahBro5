@@ -44,6 +44,8 @@ void print_node(Node* n){
 }
 
 int is_valid(Node* n){
+
+}
   
 
 
