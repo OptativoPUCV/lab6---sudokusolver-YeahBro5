@@ -53,7 +53,9 @@ int is_valid(Node* n)
          for(int j = 0; j < 9; j++)
             {
                num = n->sudo[i][j];
+               if (num < 1 || num > 9) return 0;
                if (arrayFilas[num] != 0) return 0;
+               
                arrayFilas[num] = 1;
 
             }
