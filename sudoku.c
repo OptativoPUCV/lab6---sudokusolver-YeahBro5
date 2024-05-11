@@ -54,7 +54,7 @@ int is_valid(Node* n)
          for(int j = 0; j < 9; j++)
             {
                num = n->sudo[i][j];
-               if (num < 1 || num > 9) return 0;
+              // if (num < 1 || num > 9) return 0;
                if (arrayFilas[num] != 0) return 0;
                
                arrayFilas[num] = 1;
@@ -68,7 +68,7 @@ int is_valid(Node* n)
          for (int i = 0; i < 9; i++)
             {
                num = n->sudo[i][j];
-               if (num < 1 || num > 9) return 0;
+              // if (num < 1 || num > 9) return 0;
                if (arrayColumnas[num] != 0) return 0;
 
                arrayColumnas[num] = 1;
@@ -85,21 +85,16 @@ int is_valid(Node* n)
             int j = 3 * (k % 3) + (p % 3);  
             int num = n->sudo[i][j];  
 
-            if (num < 1 || num > 9) return 0;  
+          // if (num < 1 || num > 9) return 0;  
             if (arrayMatrices[num] != 0) return 0;  
 
             arrayMatrices[num] = 1;  
         }
     }
-      
-   
-
-   
 
    return 1;
    
    
-
 }
 
 
