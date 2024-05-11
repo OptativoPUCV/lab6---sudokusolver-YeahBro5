@@ -56,7 +56,7 @@ int is_valid(Node* n)
                num = n->sudo[i][j];
                if (num != 0)
                {
-                  if (num < 1 || num > 9) return 0;
+                 // if (num < 1 || num > 9) return 0;
                   if (arrayFilas[num] != 0) return 0;
                   arrayFilas[num] = 1;
                   
