@@ -76,6 +76,7 @@ List* get_adj_nodes(Node* n)
 
 
 int is_final(Node* n){
+   int arr[10] = {0};
     return 0;
 }
 

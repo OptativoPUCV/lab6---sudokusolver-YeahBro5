@@ -8,3 +8,14 @@ Sat 11 May 2024 05:53:06 PM UTC:
  tests:  2|4
 total_score: 15/70
 8f3bc0c
+Sat 11 May 2024 07:35:20 PM UTC: 
+ sudoku.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:5:
+sudoku.c: In function ‘is_final’:
+sudoku.c:79:8: error: unused variable ‘arr’ [-Werror=unused-variable]
+   79 |    int arr[10] = {0};
+      |        ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+ed13ccd
