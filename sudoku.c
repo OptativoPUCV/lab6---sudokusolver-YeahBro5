@@ -58,13 +58,9 @@ int is_valid(Node* n)
                {
                   if (num < 1 || num > 9) return 0;
                   if (arrayFilas[num] != 0) return 0;
-                  
+                  arrayFilas[num] = 1;
                   
                }
-               if (num < 1 || num > 9) return 0;
-               if (arrayFilas[num] != 0) return 0;
-               
-               arrayFilas[num] = 1;
 
             }
       }
