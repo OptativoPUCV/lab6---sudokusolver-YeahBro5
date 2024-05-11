@@ -69,6 +69,7 @@ int is_valid(Node* n)
          for (int i = 0; i < 9; i++)
             {
                num = n->sudo[i][j];
+               if (num == 0) continue;
                if (num < 1 || num > 9) return 0;
                if (arrayColumnas[num] != 0) return 0;
 
@@ -81,10 +82,12 @@ int is_valid(Node* n)
     for (int k = 0; k < 9; k++) {
         int arrayMatrices[10] = {0};  
         for (int p = 0; p < 9; p++) {
+          
            
             int i = 3 * (k / 3) + (p / 3);  
             int j = 3 * (k % 3) + (p % 3);  
             int num = n->sudo[i][j];  
+            if (num == 0) continue;
 
             if (num < 1 || num > 9) return 0;  
             if (arrayMatrices[num] != 0) return 0;  
