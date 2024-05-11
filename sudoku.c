@@ -47,7 +47,7 @@ int is_valid(Node* n)
 {
    
    int num;
-   // Primero revisar que no se repitan los numeros en la fila
+   //  filas
    for (int i = 0; i < 9; i++)
       {
          int arrayFilas[10] = {0};
@@ -116,7 +116,10 @@ List* get_adj_nodes(Node* n)
                      {
                         Node* newNode = copy(n);
                         newNode->sudo[i][j] = k;
-                        pushBack(list, newNode);
+                        if (is_valid(newNode))
+                        {
+                           pushBack(list, newNode);
+                        }
                         
                      }
                   return list;
