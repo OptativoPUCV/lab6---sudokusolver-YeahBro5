@@ -45,7 +45,7 @@ void print_node(Node* n){
 
 int is_valid(Node* n)
 {
-   return 1;
+   
    int num;
    // Primero revisar que no se repitan los numeros en la fila
    for (int i = 0; i < 9; i++)
@@ -61,6 +61,8 @@ int is_valid(Node* n)
 
             }
       }
+
+   return 0;
    
    
 
