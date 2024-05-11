@@ -43,13 +43,24 @@ void print_node(Node* n){
     printf("\n");
 }
 
-int is_valid(Node* n){
+int is_valid(Node* n)
+{
+   int num;
+   // Primero revisar que no se repitan los numeros en la fila
+   for (int i = 0; i < 9; i++)
+      {
+         int arrayFilas[10] = {0};
+         for(int j = 0; j < 9; j++)
+            {
+               num = n->sudo[i][j];
+               if (arrayFilas[num] != 0) return 0;
+               arrayFilas[num] = 1;
 
-
+            }
+      }
    
    return 1;
 }
-  
 
 
 List* get_adj_nodes(Node* n)
