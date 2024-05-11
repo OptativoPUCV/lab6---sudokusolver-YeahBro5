@@ -76,7 +76,15 @@ List* get_adj_nodes(Node* n)
 
 
 int is_final(Node* n){
-   int arr[10] = {0};
+   int arrayFilas[10] = {0};
+   int num;
+   // Primero revisar que no se repitan los numeros en la fila
+   for (int i = 0; i < 9; i++)
+      {
+         num = n->sudo[i][0];
+         if (arrayFilas[num] != 0) return 0;
+         arrayFilas[num] = 1;
+      }
     return 0;
 }
 
